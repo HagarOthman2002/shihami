@@ -1,0 +1,593 @@
+:root {
+  --back-ground: #140c1f;
+  --purple: rgba(173, 26, 175, 1);
+  --dark-color: #191123;
+}
+/*Global rules*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Start Global Rules */
+
+body {
+  font-family: "Oxanium", serif;
+  background-color: var(--back-ground);
+}
+.main-btn {
+  background-color: var(--purple);
+}
+/*Main title*/
+.main-title p {
+  background: linear-gradient(to right, white, var(--purple));
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  background-clip: text; /* Standard property */
+  color: transparent; /* Fallback for older browsers */
+}
+.main-title h1 {
+  font-size: 60px;
+  line-height: 2;
+}
+/*Header*/
+header .logo img {
+  width: 150px;
+}
+
+.nav {
+  background: linear-gradient(to right, var(--dark-color), #1a1a1a);
+}
+.nav ul li a {
+  text-decoration: none;
+}
+header .user .user-img {
+  width: 40px;
+}
+@media (max-width: 767px) {
+  .logo img {
+    width: 50px;
+  }
+  .nav ul li {
+    padding: auto;
+  }
+  header .user .user-img {
+    width: 15px;
+  }
+  header .main-btn {
+  }
+}
+header .nav .toggle-menu {
+  color: white;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  header .nav .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  header .nav ul {
+    display: none !important ;
+  }
+  header .nav {
+    position: relative;
+  }
+  header .nav .toggle-menu:hover + ul {
+    display: flex !important;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    left: 0; 
+    position: absolute;
+    background-color: #1a1a1a; 
+    z-index: 1000; 
+  }
+
+}
+/* Start Landing */
+
+
+.landing .buttons button {
+  width: 150px;
+}
+
+.landing .buttons .seconde-button {
+  border: 1px solid var(--purple);
+  position: relative;
+}
+
+.landing .buttons .seconde-button::before,
+.landing .buttons .seconde-button::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 3px;
+  background-color: var(--purple);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.landing .buttons .seconde-button::before {
+  right: -2px;
+}
+
+.landing .buttons .seconde-button::after {
+  left: -2px;
+}
+
+.landing .card {
+  border-top: 2.5px solid;
+  border-bottom: 2.5px solid;
+  border-left: 0;
+  border-right: 0;
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    )
+    1;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(5px);
+}
+/* Parent container for positioning */
+.row.position-relative {
+  position: relative;
+}
+
+/* Card 1 */
+.first-img {
+  position: relative;
+  z-index: 1;
+  transform: translate(40px, 50px);
+}
+
+/* Card 2 */
+.mid-img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+/* Card 3 */
+.last-img {
+  position: relative;
+  z-index: 1;
+  transform: translate(-40px, 50px); 
+}
+@media (max-width: 767px) {
+  .landing .container {
+    max-width: 100%;
+  }
+  .landing .wraper {
+    margin: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*milky way*/
+.landing {
+  overflow: hidden;
+  position: relative;
+  /* background-image:url("../images/Milky Way.png"); */
+}
+.landing .Milky-way {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+} 
+@media(max-width:767px){
+  .landing .Milky-way {
+    display: none;
+  }
+
+}
+
+/* Media query for screens smaller than 767px (mobile devices) */
+@media (max-width: 768px) {
+  /* Reset transforms and positioning for mobile */
+  .first-img,
+  .last-img {
+    transform: none;
+  }
+
+  .mid-img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  /* Stack cards vertically */
+  .landing.row.card-imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center cards horizontally */
+  }
+  /* Adjust card width for better mobile display */
+  .col-lg-4.col-md-6 {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit card width for better readability */
+  }
+    .left-section {
+      margin-top:20px;
+      justify-content: center;
+  
+  }
+  
+}
+@media (max-width:992px){
+  .right-section{
+    text-align: center;
+  }
+  .left-section{
+    text-align: center;
+  }
+  .first-img,
+  .last-img {
+    transform: none;
+  }
+  .mid-img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  
+  }
+  .left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    margin:0;
+  }
+  .Milky-way{
+    display: none;
+  }
+}
+
+
+
+
+
+
+/*End landing*/
+/*start wallets*/
+.wallets {
+  position: relative;
+  overflow: hidden;
+}
+.wallets .Vector {
+  position: absolute;
+  z-index: -1; /* Ensure it stays behind the content */
+  top: -700px;
+  left: -200px;
+}
+@media (max-width:992px){
+  .wallets .Vector {
+    display: none;
+  }
+
+}
+
+.wallets .figure {
+  width: 100px;
+  height: 100px;
+  outline: 15px solid rgba(183, 177, 177, 0.1);
+}
+.wallets .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 200px;
+}
+/*works*/
+.works {
+  position: relative;
+}
+.works .blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.works .vec {
+  width: 100px;
+  object-fit: contain;
+  position: relative;
+}
+
+/*drop*/
+.drop input {
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  width: 500px;
+}
+@media (max-width: 767px) {
+  .drop input {
+    width: 200px;
+  }
+}
+/* Parent container */
+.drop {
+  position: relative; /* Create positioning context */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+/* Vector image */
+.drop_vector {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media(max-width:992px){
+  .drop_vector{
+    display: none;
+  }
+}
+
+/* Background image */
+.drop .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.drop .container {
+  position: relative;
+  z-index: 1;
+}
+/*start collections*/
+.collection .image-cards .image {
+  border-radius: 5px;
+  outline: 3px solid purple;
+}
+.collection .image-cards .image.first {
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+  object-fit: cover;
+}
+.collection .image-cards .image.seconde {
+  width: 120px;
+  height: 170px;
+  z-index: 4;
+  object-fit: cover;
+}
+.collection .image-cards .image.third {
+  width: 170px;
+  height: 220px;
+  z-index: 5;
+  object-fit: cover;
+}
+.collection .image-cards .image.middle {
+  width: 220px;
+  height: 270px;
+  z-index: 6;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .collection .container .main-title {
+    text-align: center;
+  }
+
+  /* Reset flex layout and apply grid layout */
+  .collection .image-cards {
+    display: grid !important; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center; 
+    align-items: center; 
+    width: 100%; 
+  }
+
+  /* Ensure all images are the same size */
+  .collection .image-cards .image {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+
+  /* Reset individual image classes for small screens */
+  .collection .image-cards .image.first,
+  .collection .image-cards .image.seconde,
+  .collection .image-cards .image.third,
+  .collection .image-cards .image.middle {
+    width: 150px; /* Override individual widths */
+    height: 150px; /* Override individual heights */
+  }
+}
+@media (max-width: 576px) {
+  .collection .container .main-title {
+    text-align: center;
+  }
+
+  /* Reset flex layout and apply grid layout */
+  .collection .image-cards {
+    display: grid !important; 
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center; 
+    align-items: center; 
+    width: 100%; 
+  }
+
+  /* Ensure all images are the same size */
+  .collection .image-cards .image {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+
+  /* Reset individual image classes for small screens */
+  .collection .image-cards .image.first,
+  .collection .image-cards .image.seconde,
+  .collection .image-cards .image.third,
+  .collection .image-cards .image.middle {
+    width: 150px; /* Override individual widths */
+    height: 150px; /* Override individual heights */
+  }
+}
+
+/*trendings*/
+.trendings {
+  position: relative;
+}
+.trendings .light {
+  position: absolute;
+  top: -500px;
+  z-index: -1;
+  left: -100px;
+}
+
+/*button style*/
+.main {
+  border: 1px solid var(--purple);
+  position: relative;
+  width: 250px;
+  height: 50px;
+}
+.main::before,
+.main::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 3px;
+  background-color: var(--purple);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main::before {
+  right: -2px;
+}
+
+.main::after {
+  left: -2px;
+}
+.secondary-button {
+  border: 1px solid var(--purple);
+  position: relative;
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.secondary-button::before,
+.secondary-button::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 3px;
+  background-color: var(--purple);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.secondary-button::before {
+  right: -2px;
+}
+
+.secondary-button::after {
+  left: -2px;
+}
+.trendings .row {
+  gap: 1px;
+}
+.trendings .people {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+@media (max-width:992px){
+  .light{
+    display: none;
+  }
+  
+}
+
+/* Start influencers */
+.influencers {
+  position: relative;
+}
+.influencers .influencers-vector {
+  position: absolute;
+  z-index: -1;
+  top: -35%;
+  left: -20%;
+}
+
+.influencers .card-content button {
+  border: 1px solid var(--purple) !important;
+}
+
+.left-imgs {
+  position: relative;
+}
+.girl {
+  position: relative;
+}
+
+.influencers .imgs .x {
+  border-radius: 5px;
+  height: 200px;
+  width: 200;
+  object-fit: cover;
+}
+.person {
+  position: absolute;
+  width: 40%;
+  border: 5px solid black;
+  bottom: -20px;
+  left: 20%;
+  z-index: 1; /* Ensure the user image appears on top */
+}
+.backgound-influencers {
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    )
+    1;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Background blur */
+}
+@media (max-width:992px){
+  .influencers-vector{
+    display: none;
+
+  }
+  .influencers .row{
+    justify-content: center;
+  }
+
+}
+
+/*start footer*/
+footer {
+  color: rgba(150, 131, 155, 1);
+}
+footer .row .foot-logo img {
+  width: 200px;
+}
+footer .social-icons ul li a {
+  color: var(--purple);
+}
