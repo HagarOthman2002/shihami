@@ -1,944 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shihahami</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!--font awesome-->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--header-->
-    <!-- <header>
-      <div class="container-fluid d-flex align-items-center pt-3">
-        <div class="logo d-flex align-items-center mb-0 me-auto">
-          <img class="" src="images/Logo (1).png" alt="logo image" />
-        </div>
-        <div class="nav p-3">
-          <i class="fa-solid fa-bars toggle-menu ms-auto"></i>
-          <ul class="d-flex align-items-center list-unstyled mb-0 text-nowrap">
-            <li class="me-3 px-3">
-              <a class="text-white" href="explore">Explore</a>
-            </li>
-            <li class="me-3 px-3">
-              <a class="text-white" href="trend">trending nftS</a>
-            </li>
-            <li class="me-3 px-3">
-              <a class="text-white" href="#">auctioned nfts</a>
-            </li>
-            <li class="me-3 px-3">
-              <a class="text-white" influencers="#">influencers</a>
-            </li>
-          </ul>
-        </div>
-        <div class="user d-flex align-items-center ms-auto">
-          <button class="main-btn border-0 text-white py-2 px-2 rounded-pill">
-            connect Wallet
-          </button>
-          <img
-            class="rounded-circle ms-3"
-            src="images/user.jfif"
-            alt=""
-            style="width: 50px ; height: 50px; object-fit: cover;"
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shihahami</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div class="container-fluid d-flex align-items-center pt-3">
+      <div class="logo d-flex align-items-center mb-0 me-auto">
+        <img class="" src="images/Logo (1).png" alt="logo image" />
       </div>
-    </header>   -->
-    <!-- landing -->
-    <div class="landing position-relative pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-xl-6 col-lg-4 col-md-10 col-sm-12 mb-sm-5 mb-md-5 right-section"
-          >
-            <h1 class="text-white text-uppercase mb-4">
-              EXPLORE, CREATE AND<br />
-              SELL YOUR NFT’S ON<br />
-              SHIHAMI
-            </h1>
-            <p class="text-white fw-light mb-5">
-              Shihami is the World’s first and largest NFT/Avatar marketplace
-            </p>
-            <div class="buttons pt-5">
-              <button class="main-btn text-white border-0 me-3 p-2">
-                Explore More
-              </button>
-              <button class="seconde-button text-white bg-transparent p-2">
-                Create
-              </button>
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
-            <div class="row position-relative card-imgs left-section">
-              <div class="col-lg-4 col-md-6 first-img">
-                <div
-                  class="p-2 card rounded-2 h-52 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class="rounded-2 img-fluid"
-                    src="images/bleeding ghost.jfif"
-                    alt="Bleeding Ghost NFT"
-                    style="height: 170px; width: 150px; object-fit: cover"
-                  />
-                  <div
-                    class="card-body d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <h5 class="text-white text-nowrap">Bleeding Ghost</h5>
-                    <p class="text-white">$ 152,793.17</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="p-2 card rounded-2 h-52 mid-img d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class="rounded-2 img-fluid"
-                    src="images/living-of-art.jfif"
-                    alt="Living of the Art NFT"
-                    style="height: 170px; width: 150px; object-fit: cover"
-                  />
-                  <div
-                    class="card-body d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <h5 class="text-white text-nowrap">Living of the Art</h5>
-                    <p class="text-white">$ 152,793.17</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 last-img">
-                <div
-                  class="p-2 card rounded-2 h-52 d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class="rounded-2 img-fluid"
-                    src="images/status.jfif"
-                    alt="Statue of Vughae NFT"
-                    style="height: 170px; width: 150px; object-fit: cover"
-                  />
-                  <div
-                    class="card-body d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <h5 class="text-white text-nowrap">Statue of Vughae</h5>
-                    <p class="text-white">$ 152,793.17</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="nav p-3">
+        <i class="fa-solid fa-bars toggle-menu ms-auto"></i>
+        <ul class="d-flex align-items-center list-unstyled mb-0 text-nowrap">
+          <li class="me-3 px-3">
+            <a class="text-white" href="explore">Explore</a>
+          </li>
+          <li class="me-3 px-3">
+            <a class="text-white" href="trend">trending nftS</a>
+          </li>
+          <li class="me-3 px-3">
+            <a class="text-white" href="#">auctioned nfts</a>
+          </li>
+          <li class="me-3 px-3">
+            <a class="text-white" influencers="#">influencers</a>
+          </li>
+        </ul>
       </div>
-      <img
-        class="Milky-way"
-        src="images/Milky Way.png"
-        alt="Milky Way Background"
-      />
+      <div class="user d-flex align-items-center ms-auto">
+        <button class="main-btn border-0 text-white py-2 px-2 rounded-pill">
+          connect Wallet
+        </button>
+        <img class="rounded-circle ms-3" src="images/user.jfif" alt=""
+          style="width: 50px ; height: 50px; object-fit: cover;" />
+      </div>
     </div>
-    <!-- wallets -->
-    <div class="wallets pt-5 pb-5">
-      <img class="Vector" src="images/Vector.png" alt="" />
-      <div class="main-title text-center">
-        <p class="gradient-text">
-          Trade with world’s most trusted and fastest wallets
-        </p>
-        <h1 class="text-white md-4 fs-sm-3 text-nowrap">wallets we support</h1>
-      </div>
-
-      <div class="row justify-content-center g-5 pt-5">
-        <div
-          class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2"
-        >
-          <img
-            src="images/fox.png"
-            alt="Metamask"
-            class="img-fluid mb-3 rounded-circle"
-          />
-          <p class="text-white mb-0 mt-3">Metamask</p>
-        </div>
-
-        <div
-          class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2"
-        >
-          <img
-            src="images/wallet-2.png"
-            alt=""
-            class="img-fluid mb-3 rounded-circle"
-          />
-          <p class="text-white mb-0 mt-3">Binance</p>
-        </div>
-
-        <div
-          class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2"
-        >
-          <img
-            src="images/wallet-3.png"
-            alt=""
-            class="img-fluid mb-3 rounded-circle"
-          />
-          <p class="text-white mb-0 mt-3">Trust wallet</p>
-        </div>
-
-        <div
-          class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2"
-        >
-          <img
-            src="images/wallet-4.png"
-            alt=""
-            class="img-fluid mb-3 rounded-circle"
-          />
-          <p class="text-white mb-0 mt-3">Alpha</p>
-        </div>
-
-        <div
-          class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2"
-        >
-          <img
-            src="images/frog.png"
-            alt="Metamask"
-            class="img-fluid mb-3 rounded-circle"
-          />
-          <p class="text-white mb-0 mt-3">CoinGecko</p>
-        </div>
-      </div>
-
-      <img src="images/Glowing Vectors.png" alt="" />
-    </div>
-    <!-- main page container  -->
+  </header>
+  <!-- landing -->
+  <div class="landing position-relative pt-5 pb-5">
     <div class="container">
-      <!--  -->
-      <div class="collection pt-5 pb-5">
-        <div class="main-title text-center">
-          <p class="gradient-text">Explore our newly released NFT collection</p>
-          <h1 class="text-white">Our Collection</h1>
-        </div>
-        <div
-          class="image-cards d-flex align-items-center justify-content-center pt-5"
-        >
-          <img class="image first" src="images/coll-1.jfif" alt="" />
-          <img class="image seconde" src="images/coll-2.jfif" alt="" />
-          <img class="image third" src="images/coll-3.jfif" alt="" />
-          <img class="image middle" src="images/coll-4.jfif" alt="" />
-          <img class="image third" src="images/coll-5.jfif" alt="" />
-          <img class="image seconde" src="images/coll-6.png" alt="" />
-          <img class="image first" src="images/coll-7.jfif" alt="" />
-        </div>
-      </div>
-      <div class="trendings pt-5 pb-5" id="trend">
-        <img class="light" src="images/trend-vector.png" alt="" />
-        <div
-          class="secondary-heading d-flex justify-content-between text-nowrap"
-        >
-          <div class="text-content">
-            <p class="text-white fw-light mb-5">most loved NFTs of the time</p>
-            <h1 class="text-white text-uppercase">hot trending nFTs</h1>
-          </div>
-          <button class="text-white bg-transparent main">view-all</button>
-        </div>
-
-        <div
-          class="row text-white gap-3 mt-4 d-flex justify-content-center align-items-center"
-        >
-          <div
-            class="col-lg-3 col-md-6 p-2 rounded-2 bg-dark"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 bg-dark p-2 rounded-2"
-            style="width: 18rem"
-          >
-            <img
-              class="img-fluid rounded-2 mb-3"
-              src="images/coll-4.jfif"
-              alt=""
-            />
-            <div class="user d-flex gap-3">
-              <img
-                class="people rounded-circle img-fluid"
-                src="images/user.jfif"
-                alt="user img"
-              />
-              <div class="user-name">
-                <h4 class="fw-light">Monkey ape</h4>
-                <p>By @JSmith</p>
-              </div>
-            </div>
-
-            <div class="sale-content d-flex justify-content-between">
-              <div class="on-sale d-flex gap-2">
-                <p>on sale</p>
-                <i class="fa-solid fa-fire warning text-danger"></i>
-              </div>
-
-              <div class="price mb-3">
-                <div class="p d-flex">
-                  <i class="fa-brands fa-ethereum me-3"></i>
-                  <p>4.89 ETH</p>
-                </div>
-                <span>($ 654,874.86)</span>
-              </div>
-            </div>
-
-            <button
-              class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3"
-            >
-              buy now
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="influencers pt-5 pb-5" id="influencers">
-        <img
-          class="influencers-vector"
-          src="images/influencers-vector.png"
-          alt=""
-        />
-        <div
-          class="secondary-heading d-flex justify-content-between text-nowrap"
-        >
-          <div class="text-content">
-            <p class="text-white fw-light mb-5">most loved NFTs of the time</p>
-            <h1 class="text-white text-uppercase">hot trending nFTs</h1>
-          </div>
-          <button class="text-white bg-transparent main">view-all</button>
-        </div>
-
-        <div class="row text-white gap-2">
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/mokey.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/eye.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/mokey.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-2.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/eye.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-3.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-2.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 backgound-influencers"
-            style="width: 18rem"
-          >
-            <div class="imgs d-flex pt-2 gap-2 mb-2">
-              <div class="left-imgs me-auto position-relative">
-                <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
-                <img
-                  class="img-fluid person rounded-circle"
-                  src="images/user-3.jfif"
-                  alt=""
-                />
-              </div>
-              <div class="right-img ms-auto">
-                <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
-              </div>
-            </div>
-
-            <div
-              class="card-content d-flex justify-content-between align-items-center p-3"
-            >
-              <div class="name">
-                <h5>John Smith</h5>
-                <p>@Jsmith</p>
-              </div>
-              <button
-                class="rounded-pill bg-transparent text-white p-2 border-white"
-              >
-                follow
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  drop -->
-    <div class="drop pt-5 pb-5 text-center position-relative">
-      <img class="drop_vector" src="images/drop vector.png" alt="" />
-      <img
-        class="background-image"
-        src="images/drop.jfif"
-        alt="Background Image"
-      />
-      <div class="container">
-        <h1 class="text-white mt-5 fw-b">Ready for Next NFT Drop?</h1>
-        <input
-          class="mb-5 bg-transparent p-3"
-          type="text"
-          placeholder="info@gmail.com"
-        />
-      </div>
-    </div>
-
-    <!--  -->
-    <footer class="container pt-5 pb-5">
       <div class="row">
-        <div class="foot-logo col-lg-4 col-md-6 d-flex align-items-start">
-          <img src="images/Logo (1).png" alt="" />
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <p class="pb-3" style="width: 300px">
-            Shihami is the world’s leading NFTs marketplace where you can
-            discover, sell and bid NFTs and get rich
+        <div class="col-xl-6 col-lg-4 col-md-10 col-sm-12 mb-sm-5 mb-md-5 right-section">
+          <h1 class="text-white text-uppercase mb-4">
+            EXPLORE, CREATE AND<br />
+            SELL YOUR NFT’S ON<br />
+            SHIHAMI
+          </h1>
+          <p class="text-white fw-light mb-5">
+            Shihami is the World’s first and largest NFT/Avatar marketplace
           </p>
-          <div class="social- pb-3">
-            <ul class="list-unstyled d-flex">
-              <li class="me-3">
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li class="me-3">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li class="me-3">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li class="me-3">
-                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-              </li>
-            </ul>
+          <div class="buttons pt-5">
+            <button class="main-btn text-white border-0 me-3 p-2">
+              Explore More
+            </button>
+            <button class="seconde-button text-white bg-transparent p-2">
+              Create
+            </button>
           </div>
-          <div class="rights">All rights reserved @Faizansayani</div>
         </div>
 
-        <div class="about col-lg-2 col-md-6">
-          <h4 class="text-white pb-3 text-white">About</h4>
-          <ul class="list-unstyled">
-            <li class="pb-3">About NFT</li>
-            <li class="pb-3">Live Auctions</li>
-            <li class="pb-3">NFT Blog</li>
-            <li class="pb-3">Activity</li>
-          </ul>
-        </div>
+        <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+          <div class="row position-relative card-imgs left-section">
+            <div class="col-lg-4 col-md-6 first-img">
+              <div class="p-2 card rounded-2 h-52 d-flex justify-content-center align-items-center">
+                <img class="rounded-2 img-fluid" src="images/bleeding ghost.jfif" alt="Bleeding Ghost NFT"
+                  style="height: 170px; width: 150px; object-fit: cover" />
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="text-white text-nowrap">Bleeding Ghost</h5>
+                  <p class="text-white">$ 152,793.17</p>
+                </div>
+              </div>
+            </div>
 
-        <div class="support col-lg-2 col-m-6">
-          <h4 class="text-white">Support</h4>
-          <ul class="list-unstyled">
-            <li>Help & Support</li>
-            <li>Item Details</li>
-            <li>Author Profile</li>
-            <li>Collection</li>
-          </ul>
+            <div class="col-lg-4 col-md-6">
+              <div class="p-2 card rounded-2 h-52 mid-img d-flex justify-content-center align-items-center">
+                <img class="rounded-2 img-fluid" src="images/living-of-art.jfif" alt="Living of the Art NFT"
+                  style="height: 170px; width: 150px; object-fit: cover" />
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="text-white text-nowrap">Living of the Art</h5>
+                  <p class="text-white">$ 152,793.17</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 last-img">
+              <div class="p-2 card rounded-2 h-52 d-flex justify-content-center align-items-center">
+                <img class="rounded-2 img-fluid" src="images/status.jfif" alt="Statue of Vughae NFT"
+                  style="height: 170px; width: 150px; object-fit: cover" />
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="text-white text-nowrap">Statue of Vughae</h5>
+                  <p class="text-white">$ 152,793.17</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <img class="Milky-way" src="images/Milky Way.png" alt="Milky Way Background" />
+  </div>
+  <!-- wallets -->
+  <div class="wallets pt-5 pb-5">
+    <img class="Vector" src="images/Vector.png" alt="" />
+    <div class="main-title text-center">
+      <p class="gradient-text">
+        Trade with world’s most trusted and fastest wallets
+      </p>
+      <h1 class="text-white md-4 fs-sm-3 text-nowrap">wallets we support</h1>
+    </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-  </body>
+    <div class="row justify-content-center g-5 pt-5">
+      <div class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2">
+        <img src="images/fox.png" alt="Metamask" width="100px" height="100px" class="mb-3 rounded-circle object-fit-cover" />
+        <p class="text-white mb-0 mt-3">Metamask</p>
+      </div>
+
+      <div class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2">
+        <img src="images/wallet-2.png" alt="" width="100px" height="100px" class="mb-3 rounded-circle object-fit-cover" />
+        <p class="text-white mb-0 mt-3">Binance</p>
+      </div>
+
+      <div class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2">
+        <img src="images/wallet-3.png" alt="" width="100px" height="100px" class="mb-3 rounded-circle object-fit-cover" />
+        <p class="text-white mb-0 mt-3">Trust wallet</p>
+      </div>
+
+      <div class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2">
+        <img src="images/wallet-4.png" alt="" width="100px" height="100px" class="mb-3 rounded-circle object-fit-cover" />
+        <p class="text-white mb-0 mt-3">Alpha</p>
+      </div>
+
+      <div class="card col-lg-2 col-md-4 d-flex flex-column align-items-center justify-content-center p-4 mx-2">
+        <img src="images/frog.png" alt="Metamask" width="100px" height="100px" class="mb-3 rounded-circle object-fit-cover" />
+        <p class="text-white mb-0 mt-3">CoinGecko</p>
+      </div>
+    </div>
+  </div>
+  <!-- main page container  -->
+  <!--  -->
+  <div class="container collection pt-5 pb-5">
+    <div class="main-title text-center">
+      <p class="gradient-text">Explore our newly released NFT collection</p>
+      <h1 class="text-white">Our Collection</h1>
+    </div>
+    <div class="image-cards d-flex align-items-center justify-content-center pt-5">
+      <img class="image first" src="images/coll-1.jfif" alt="" />
+      <img class="image seconde" src="images/coll-2.jfif" alt="" />
+      <img class="image third" src="images/coll-3.jfif" alt="" />
+      <img class="image middle" src="images/coll-4.jfif" alt="" />
+      <img class="image third" src="images/coll-5.jfif" alt="" />
+      <img class="image seconde" src="images/coll-6.png" alt="" />
+      <img class="image first" src="images/coll-7.jfif" alt="" />
+    </div>
+  </div>
+
+  <div class="trendings pt-5 pb-5" id="trend">
+    <img class="light" src="images/trend-vector.png" alt="" />
+    <div class="container">
+      <div class="secondary-heading d-flex justify-content-between text-nowrap align-items-center">
+        <div class="text-content">
+          <p class="text-white fw-light mb-5">most loved NFTs of the time</p>
+          <h1 class="text-white text-uppercase">hot trending nFTs</h1>
+        </div>
+        <button class="text-white bg-transparent main">view-all</button>
+      </div>
+
+      <div class="row text-white gap-3 mt-4 d-flex justify-content-center align-items-center">
+        <div class="col-lg-3 col-md-6 p-2 rounded-2 bg-dark" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 bg-dark p-2 rounded-2" style="width: 18rem">
+          <img class="img-fluid rounded-2 mb-3" src="images/coll-4.jfif" alt="" />
+          <div class="user d-flex gap-3">
+            <img class="people rounded-circle img-fluid" src="images/user.jfif" alt="user img" />
+            <div class="user-name">
+              <h4 class="fw-light">Monkey ape</h4>
+              <p>By @JSmith</p>
+            </div>
+          </div>
+
+          <div class="sale-content d-flex justify-content-between">
+            <div class="on-sale d-flex gap-2">
+              <p>on sale</p>
+              <i class="fa-solid fa-fire warning text-danger"></i>
+            </div>
+
+            <div class="price mb-3">
+              <div class="p d-flex">
+                <i class="fa-brands fa-ethereum me-3"></i>
+                <p>4.89 ETH</p>
+              </div>
+              <span>($ 654,874.86)</span>
+            </div>
+          </div>
+
+          <button class="secondary-button text-white bg-transparent py-2 px-5 ms-auto text-uppercase mt-3">
+            buy now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="influencers pt-5 pb-5" id="influencers">
+    <img class="influencers-vector" src="images/influencers-vector.png" alt="" />
+    <div class="container">
+      <div class="secondary-heading d-flex justify-content-between text-nowrap align-items-center">
+        <div class="text-content">
+          <p class="text-white fw-light mb-5">most loved NFTs of the time</p>
+          <h1 class="text-white text-uppercase">hot trending nFTs</h1>
+        </div>
+        <button class="text-white bg-transparent main">view-all</button>
+      </div>
+
+      <div class="row text-white gap-2">
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/mokey.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-1.png" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/eye.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/mokey.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-2.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/eye.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-3.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-1.png" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-2.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 backgound-influencers" style="width: 18rem">
+          <div class="imgs d-flex pt-2 gap-2 mb-2">
+            <div class="left-imgs me-auto position-relative">
+              <img class="img-fluid girl x" src="images/coll-2.jfif" alt="" />
+              <img class="img-fluid person rounded-circle" src="images/user-3.jfif" alt="" />
+            </div>
+            <div class="right-img ms-auto">
+              <img class="img-fluid x" src="images/coll-3.jfif" alt="" />
+            </div>
+          </div>
+
+          <div class="card-content d-flex justify-content-between align-items-center p-3">
+            <div class="name">
+              <h5>John Smith</h5>
+              <p>@Jsmith</p>
+            </div>
+            <button class="rounded-pill bg-transparent text-white p-2 border-white">
+              follow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  drop -->
+  <div class="drop pt-5 pb-5 text-center position-relative">
+    <img class="drop_vector" src="images/drop vector.png" alt="" />
+    <img class="background-image" src="images/drop.jfif" alt="Background Image" />
+    <div class="container">
+      <h1 class="text-white mt-5 fw-b">Ready for Next NFT Drop?</h1>
+      <input class="mb-5 bg-transparent p-3" type="text" placeholder="info@gmail.com" />
+    </div>
+  </div>
+
+  <!--  -->
+  <footer class="container pt-5 pb-5">
+    <div class="row">
+      <div class="foot-logo col-lg-4 col-md-6 d-flex align-items-start">
+        <img src="images/Logo (1).png" alt="" />
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <p class="pb-3" style="width: 300px">
+          Shihami is the world’s leading NFTs marketplace where you can
+          discover, sell and bid NFTs and get rich
+        </p>
+        <div class="social- pb-3">
+          <ul class="list-unstyled d-flex">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="rights">All rights reserved @Faizansayani</div>
+      </div>
+
+      <div class="about col-lg-2 col-md-6">
+        <h4 class="text-white pb-3 text-white">About</h4>
+        <ul class="list-unstyled">
+          <li class="pb-3">About NFT</li>
+          <li class="pb-3">Live Auctions</li>
+          <li class="pb-3">NFT Blog</li>
+          <li class="pb-3">Activity</li>
+        </ul>
+      </div>
+
+      <div class="support col-lg-2 col-m-6">
+        <h4 class="text-white">Support</h4>
+        <ul class="list-unstyled">
+          <li>Help & Support</li>
+          <li>Item Details</li>
+          <li>Author Profile</li>
+          <li>Collection</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
 </html>
